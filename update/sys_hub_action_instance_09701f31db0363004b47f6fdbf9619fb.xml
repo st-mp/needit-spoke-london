@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_action_instance">
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <comment>Updtes the NeedIt Task state as closed complete and edits the work notes with the reason.</comment>
+        <compiled_snapshot display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Handle Overdue NeedIt Tasks">f4701f31db0363004b47f6fdbf9619ab</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-01-17 23:24:38</sys_created_on>
+        <sys_id>09701f31db0363004b47f6fdbf9619fb</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="NeedIt Spoke" source="x_290671_needit_sp">851bfa7ddb4f23004b47f6fdbf961970</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt Spoke">851bfa7ddb4f23004b47f6fdbf961970</sys_scope>
+        <sys_update_name>sys_hub_action_instance_09701f31db0363004b47f6fdbf9619fb</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-01-17 23:24:38</sys_updated_on>
+        <ui_id>0e38dde1-e9cb-4e22-beb8-c05fd1c5c112</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=09701f31db0363004b47f6fdbf9619fb"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>09701f31db0363004b47f6fdbf9619fb</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-01-17 23:24:38</sys_created_on>
+        <sys_id>cd705f31db0363004b47f6fdbf961900</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-01-17 23:24:38</sys_updated_on>
+        <value>x_58872_needit_needit_task</value>
+        <variable display_value="">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=09701f31db0363004b47f6fdbf9619fb"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>09701f31db0363004b47f6fdbf9619fb</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-01-17 23:24:38</sys_created_on>
+        <sys_id>89705f31db0363004b47f6fdbf961900</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-01-17 23:24:38</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{subflow.needit_task}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>09701f31db0363004b47f6fdbf9619fb</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-01-17 23:24:38</sys_created_on>
+        <sys_id>c5705f31db0363004b47f6fdbf961900</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-01-17 23:24:38</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>09701f31db0363004b47f6fdbf9619fb</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-01-17 23:24:38</sys_created_on>
+        <sys_id>4d705f31db0363004b47f6fdbf961900</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-01-17 23:24:38</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>state=3^work_notes={{subflow.reason}}</value>
+    </sys_element_mapping>
+</record_update>
